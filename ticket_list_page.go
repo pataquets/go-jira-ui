@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"regexp"
 
-	ui "github.com/gizak/termui"
 	"gopkg.in/Netflix-Skunkworks/go-jira.v0"
+	ui "gopkg.in/gizak/termui.v2"
 )
 
 type TicketListPage struct {
 	BaseListPage
 	CommandBarFragment
 	StatusBarFragment
-	ActiveQuery Query
-	ActiveSort  Sort
+	ActiveQuery     Query
+	ActiveSort      Sort
 	RankingTicketId string
 }
 

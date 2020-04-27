@@ -3,7 +3,7 @@ package jiraui
 import (
 	"fmt"
 
-	ui "github.com/gizak/termui"
+	ui "gopkg.in/gizak/termui.v2"
 )
 
 type Query struct {
@@ -52,8 +52,8 @@ func getQueries() (queries []Query) {
 		)
 		return append(
 			queries,
-			baseQueries...
-		);
+			baseQueries...,
+		)
 	}
 	return baseQueries
 }
